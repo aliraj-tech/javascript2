@@ -282,4 +282,155 @@
 // else alert("try again")  
 
 
+//task 1 chap 31-34
+
+
+// var d = new Date()
+// document.write(d)
+
+// task 2 chap 31-34
+// var d = new Date();
+//  var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+//  document.write( "current month : " + months[d.getMonth()])
+
+//task 3 chap 31-34
+
+
+//  var d = new Date();
+//  var months = ["monday","tuesday","wednesday","thursday","friday","satusday","sunday"];
+
+//  var g= months[d.getDay()-1]
+
+//  var h=g.slice(0,3)
+//  document.write( "current day : " + h )
+
+// task 4 chap 31-34
+//   var d = new Date();
+//   var months = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"];
+
+//   var g= months[d.getDay()-1]
+
+
+//   if (g==="saturday" ) {
+//   alert("its funday ") ;  }
+
+//    else if (g==="sunday" ) 
+//     alert("its funday ") 
+
+//     else alert("its not funday")
+
+//   document.write( "current month : " + g )
+
+// task 5 chap 31-34
+
+
+// var d = new Date();
+//   var n = d.getDay()
+//   if ( n>= "16" )
+//   alert ("second fifteen days of month")
+//   if ( n<= "15" )
+//   alert ("first fifteen days of month")
+
+
+// task 6 chap 31-34
+
+// var d = new Date();
+//   var n = d.getTime();
+
+//   var h=n/60000
   
+
+//   document.write("elapsed mili secoonds since jan1 1970 : " + n + " miliseonds <br> and total minutes from jan 1 1970 :  " + Math.floor(h))
+
+
+
+// task 7 chap 31-34
+
+
+
+// var d = new Date();
+// var n = d.getHours();
+
+// if (d >= 12 ) 
+// alert("its pm")
+// else if  (d <= 12 ) 
+// alert("its am")
+
+
+// task 8 chap 31-34
+
+// var g = new Date(2020, 11, 31, 00,00, 00,0);
+
+// document.write(g)
+// task 9 chap 31-34
+
+
+// var now = new Date(2020,5,24);
+// var start = new Date(now.getFullYear(), 0, 0);
+// var diff = now - start;
+// var oneDay = 1000 * 60 * 60 * 24;
+// var day = Math.floor(diff / oneDay);
+// document.write(now + '  have passed after ramzan '  );
+
+
+// task 10 chap 31-34
+
+// var a = new Date();
+// b = new Date("2015 dec 5");
+
+// alert(
+// a + "\n" + 
+// b + "\n" +
+// "Seconds Passed Since Begining Of 2015: " +Math.round(((+a - +b) / 1000))
+// )
+
+// task 11 chap 31-34
+
+
+// var d = new Date();
+// var d2 = new Date();
+// d.setHours(d.getHours() - 1);
+// alert ("TIME RIGHT NOW:" + " "+d + +"TIME ONE HOUR AHEAD:"+" "+d2);
+
+// tasl 12 cha 31-34
+
+// var d = new Date();
+// var d2 = new Date();
+// d2.setFullYear(d.getFullYear()- 100);
+// alert("DATE RIGHT NOW:"+" "+d+"\n"+"100 YEARS BACK:"+" "+d2); 
+
+
+
+// task 13 chap 31-34 
+
+// 
+// var age = window.prompt('Enter Your Age Please')
+//   var d = new Date();
+//   var n = d.getFullYear()-age;
+//  alert ("YOUR Birth YEAR:"+" "+n);
+
+
+
+// task 14 chap 31-34
+
+
+var  name = prompt ("enter your name ")
+
+
+var units= Math.floor( Math.random() * 500 + 1)
+
+var charge = "16" * units
+
+
+var due= Math.floor( Math.random() * 30 + 1)
+
+var h =  ( parseInt (units) + 30  ) * 16
+
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+document.write ("<h1>KE BILL"+ "<br> Customer name  :" + name  + "<br>  currnent month  :" +  months[d.getMonth()] + "<br> Number of units consumed :" + units + "<br> charge per unit : 16 Rs <br>" + "net amount payable within due date : " + charge + "<br> gross amount payable after due date : "  + h)
+
+
+
+
